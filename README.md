@@ -7,8 +7,8 @@
 
 ## Data Modifications
 
-- Add/Remove to list
-- Create a new input list
+- Modify property done
+- Create a new task
 
 # Components
 
@@ -16,32 +16,7 @@
 
 ### Show data
 
-- A Header component
 - A form
-- A list
-
-## Header
-
-### Show data
-
-- A text inside a div
-
-## Button
-
-### Show data
-
-- The received text
-
-### Get actions:
-
-- Call the received action on click
-
-## List Container
-
-### Show data
-
-- An h1 with the received text
-- A form with its inputs
 - A list
 
 ## Form
