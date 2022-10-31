@@ -1,7 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { tasksReducer } from "../store/features/taskSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    taskListReducer: tasksReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
