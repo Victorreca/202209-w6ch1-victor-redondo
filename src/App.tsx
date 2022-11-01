@@ -1,8 +1,8 @@
-import { useAppDispatch } from "./app/hooks";
 import List from "./components/List";
-import { loadTasksActionCreator } from "./store/features/taskSlice";
+import { loadTasksActionCreator } from "./redux/features/taskSlice";
 import React, { useEffect } from "react";
 import task from "./data/tasks";
+import { useAppDispatch } from "./redux/slices/hooks";
 
 const App = () => {
   const dispatch = useAppDispatch();
