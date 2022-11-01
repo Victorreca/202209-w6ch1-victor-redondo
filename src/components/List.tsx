@@ -8,16 +8,14 @@ const List = (): JSX.Element => {
 
   return (
     <div>
-      <ul>
-        {tasks.map((task, index) => (
-          <ul key={index}>
-            <li>{task.name}</li>
-            <button onClick={() => dispatch(removeTasksActionCreator(task.id))}>
-              Elimina
-            </button>
-          </ul>
-        ))}
-      </ul>
+      {tasks.map((task, index) => (
+        <ul key={index}>
+          <li>{task.name}</li>
+          <button onClick={() => dispatch(removeTasksActionCreator(task.id))}>
+            Elimina
+          </button>
+        </ul>
+      ))}
     </div>
   );
 };
