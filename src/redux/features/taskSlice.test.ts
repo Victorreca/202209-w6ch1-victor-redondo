@@ -11,6 +11,7 @@ describe("Given the tasksReducer function", () => {
       test("Then should return a list of 2 tasks", () => {
         const loadToDoTaskListAction = loadTasksActionCreator(tasks);
         const initialStat = tasksInitialState;
+
         const expectState = {
           tasks: [
             {
@@ -26,6 +27,7 @@ describe("Given the tasksReducer function", () => {
           ],
         };
         const newState = tasksReducer(initialStat, loadToDoTaskListAction);
+
         expect(newState).toStrictEqual(expectState);
       });
     });
