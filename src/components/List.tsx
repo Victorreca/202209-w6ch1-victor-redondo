@@ -1,13 +1,24 @@
-import { useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { removeTasksActionCreator } from "../store/features/taskSlice";
 
 const List = (): JSX.Element => {
   const tasks = useAppSelector(({ tasks }) => tasks.tasks);
+
+  const dispatch = useAppDispatch();
+
   return (
-    <ul>
-      {tasks.map((task) => (
-        <li>{task.name}</li>
-      ))}
-    </ul>
+    <div>
+      <ul>
+        {tasks.map((task, index) => (
+          <ul key={index}>
+            <li>{task.name}</li>
+            <button onClick={() => dispatch(removeTasksActionCreator(task.id))}>
+              Eliminar
+            </button>
+          </ul>
+        ))}
+      </ul>
+    </div>
   );
 };
 
