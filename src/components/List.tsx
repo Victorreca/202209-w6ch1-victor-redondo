@@ -13,7 +13,7 @@ const List = (): JSX.Element => {
           <ul key={index}>
             <li>{task.name}</li>
             <button onClick={() => dispatch(removeTasksActionCreator(task.id))}>
-              Eliminar
+              Elimina
             </button>
           </ul>
         ))}
