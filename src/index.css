@@ -5,4 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin-left: 40px;
+}
+button {
+  color: #7a37d4;
+  background: transparent;
+  border: 2px solid #7a37d4;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+button:hover {
+  background-color: #7a37d4;
+  color: white;
 }
