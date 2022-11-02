@@ -11,9 +11,10 @@ const List = (): JSX.Element => {
 
   return (
     <div>
+      <h1>Por hacer</h1>
       {tasks.map((task, index) => (
-        <ul key={index}>
-          <li>{task.name}</li>
+        <ul key={index} aria-label="task">
+          <li key={index}>{task.name}</li>
           <button onClick={() => removeTasksApi(task.id)}>Elimina</button>
         </ul>
       ))}

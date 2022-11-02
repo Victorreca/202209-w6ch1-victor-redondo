@@ -11,9 +11,7 @@ const App = () => {
   }, [dispatch]);
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Por hacer</h1>
-      </header>
+      <header className="app-header"></header>
       <List />
     </div>
   );
