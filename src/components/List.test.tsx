@@ -12,12 +12,12 @@ describe("Given a List component", () => {
         </Provider>
       );
 
-      const list = screen.queryByRole("heading", {
+      const heading = screen.queryByRole("heading", {
         level: 1,
         name: "Por hacer",
       });
 
-      expect(list).toBeInTheDocument();
+      expect(heading).toBeInTheDocument();
     });
   });
 });
