@@ -4,7 +4,7 @@ import { tasksReducer } from "../redux/features/taskSlice";
 const mockStore = () => {
   return configureStore({
     reducer: {
-      tasksToDo: tasksReducer,
+      tasks: tasksReducer,
     },
   });
 };
